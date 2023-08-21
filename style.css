@@ -6,29 +6,49 @@
   font-family: "roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 header {
-  background-color: rgb(245, 245, 245);
-  font-family: "roboto", sans-serif;
+  padding: 5px;
+  /* margin: 5px; */
+  background-color: azure;
+  position: static;
+  width: 100%;
+  min-height: 20px;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0;
+  padding-top: 8px;
 }
 
 .logo {
-  width: 200px;
-  height: 80px;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.container {
+.logo img {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  font-size: small;
+  align-items: center;
+  margin: auto;
+  height: 70px;
+  width: 90px;
 }
 
-a:link {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
+nav a {
+  font-weight: 500;
 }
 
 a:active {
@@ -133,7 +153,7 @@ body div .imagenbanner {
 .parrafos {
   font-size: small;
   margin: 10;
-  /* padding: 10px; */
+  padding: 20px;
   border: 0;
   text-align: justify;
 }
@@ -143,7 +163,7 @@ body div .imagenbanner {
   font-size: large;
   color: #000;
   font-family: "roboto", sans-serif;
-  text-decoration: underline, aqua;
+  /* text-decoration: underline, aqua; */
   font-weight: normal;
   text-align: center;
 }
@@ -178,18 +198,21 @@ body div .imagenbanner {
 }
 
 footer {
-  margin: 0;
+  margin-top: 1.2em;
   padding: 20px;
   background-color: #bae8ec8c;
   text-align: center;
 }
-
-.footer {
+*/ .footer {
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1.2em;
+  padding: 20px;
+  background-color: #bae8ec8c;
+  text-align: center;
 }
 
 .contact-info a {
@@ -219,6 +242,17 @@ footer {
 
 /* Adopciones y Tránsito */
 
+.imagenesAdop {
+  align-items: center;
+}
+
+.imgAdop {
+  width: 30%;
+  height: 300%;
+  margin: 5px;
+  border-radius: 5px;
+}
+
 .consejos {
   margin-left: 20%;
 }
@@ -232,7 +266,6 @@ footer {
   box-shadow: 2px 3px 5px #000;
   padding: 11px;
   border-top: 4px solid rgb(36, 237, 170);
-  /* color: white; */
 }
 
 .controlsAdop {
@@ -240,8 +273,19 @@ footer {
   border: 1px solid rgb(36, 237, 170);
   margin-bottom: 6px;
   padding: 4px 1px;
-  background: #d8d6d6;
+  background: rgb(245, 245, 245);
   font-size: 14px;
+}
+
+.formCont {
+  width: auto;
+  height: auto;
+  background-color: aquamarine;
+  margin: auto;
+  margin-top: 10px;
+  box-shadow: 2px 3px 5px #000;
+  padding: 11px;
+  border-top: white;
 }
 
 .gifadopcion {
@@ -260,13 +304,59 @@ footer {
 .button3 {
   width: 100%;
   height: 20px;
-  /* background: rgb(36, 237, 170); */
   background: linear-gradient(to right, #3f51b5, aqua);
   border: none;
   color: white;
   margin-bottom: 6px;
 }
 
+/* Telefonos Utiles */
+
+.imagenestelefonos {
+  justify-content: space-between;
+  width: 45%;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.informacion li {
+  margin-left: 5%;
+  list-style: square;
+  font-size: small;
+  margin: 20px;
+  border: 0;
+  text-align: left;
+}
+
+/* Contacto */
+
+.contactoP {
+  margin: 10px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.imgCont {
+  width: 230px;
+  height: 160px;
+  margin-left: 25px;
+  border-radius: 5px;
+}
+
+.contacto {
+  width: 100%;
+  border-bottom: 2px solid white;
+  margin-bottom: 6px;
+  padding: 4px 1px;
+  background-color: RGB(245, 245, 245);
+
+  font-size: 14px;
+}
+.checkbox {
+  font-size: medium;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
 @media (min-width: 768px) {
   header .container {
     flex-direction: row;
@@ -275,12 +365,17 @@ footer {
     font-size: medium;
   }
 
+  .logo img {
+    height: 90px;
+    width: 110px;
+  }
+
   .logo {
+    display: flex;
+    align-items: center;
     margin: 0;
-    padding: 25px 30px;
-    width: 50%;
+    padding: 7px 8px;
     height: 80%;
-    /* align-items: center; */
   }
 
   .imagenesinicioA {
@@ -310,13 +405,16 @@ footer {
   }
 
   .button {
-    width: 100%;
-    height: 10%;
-    /* background: rgb(36, 237, 170); */
+    width: 30%;
     background: linear-gradient(to right, #3f51b5, aqua);
     border: none;
     color: white;
-    margin-bottom: 10px;
+
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+
+    font-size: 14px;
   }
 
   .videoinicio {
@@ -339,7 +437,6 @@ footer {
     display: grid;
     grid-template-areas: "imagenInicio imagenInicio formularioInicio";
     justify-content: space-evenly;
-    /* width: 768px; */
     height: 300px;
   }
 
@@ -366,10 +463,8 @@ footer {
     width: auto;
     height: auto;
     background-color: aquamarine;
-    /* margin: auto; */
     margin-top: 10px;
     box-shadow: 2px 3px 5px #000;
-    /* padding: 11px; */
     border-top: 4px solid rgb(36, 237, 170);
     color: white;
   }
@@ -379,32 +474,89 @@ footer {
     text-align: center;
     height: 20px;
     margin-bottom: 5px;
+
     border-bottom: 1px solid rgb(36, 237, 170);
     font-size: 15px;
   }
 
   .controls2 {
-    width: 100%;
-    border: 1px solid rgb(36, 237, 170);
+    width: 50%;
+    display: block;
+    margin: auto;
     margin-bottom: 5px;
     padding: 4px 1px;
-    background: #d8d6d6;
+    background: rgb(245, 245, 245);
     font-size: 14px;
+    text-align: letf;
+  }
+
+  /* Adopciones y tránsito */
+  .gifadopcion {
+    width: 30%;
+    height: 20%;
+  }
+
+  /* Telefonos Utiles */
+  .informacion li {
+    margin-left: 5%;
+    list-style: square;
+    font-size: medium;
+    margin: 30px;
+    border: 0;
+    text-align: left;
+  }
+
+  /* Contacto */
+  .formCont {
+    margin: 20px;
+  }
+
+  .contactoP {
+    grid-area: parrafoContacto;
+    margin: 10px;
+    padding: 10px;
+    /* text-align: justify; */
+  }
+
+  .imgCont {
+    grid-area: imagenContacto;
+    width: 230px;
+    /* width: auto; */
+    height: 160px;
+    margin-top: 15px;
+    margin-left: 25px;
+    border-radius: 5px;
+  }
+
+  body .phone {
+    display: grid;
+    grid-template-areas: "parrafoContacto imagenContacto";
+    justify-content: space-evenly;
   }
 }
-
-/* Adopciones y tránsito */
-.gifadopcion {
-  width: 30%;
-  height: 20%;
-}
-
 @media (min-width: 1000px) {
-  .logo {
-    margin: 0;
-    padding: 25px 30px;
-    width: 600px;
-    height: 200px;
+  */ a {
+    text-decoration: none;
+    color: #000;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 120px;
+    width: 150px;
+  }
+
+  nav a {
+    font-weight: 600;
+    padding-right: 10px;
+  }
+
+  nav a:hover {
+    color: aqua;
   }
 
   .imagenesinicioA {
@@ -413,7 +565,6 @@ footer {
     height: 350px;
     margin: 10px;
     border: 5px;
-    /* border: 2px black solid; */
   }
 
   .imagenesinicio {
@@ -425,7 +576,7 @@ footer {
   }
 
   body {
-    margin: 40px;
+    margin: auto;
     font-size: medium;
     font-family: "roboto", sans-serif;
   }
@@ -526,11 +677,41 @@ footer {
   }
 
   .controls2 {
-    width: 100%;
-    border: 1px solid rgb(36, 237, 170);
+    width: 90%;
     margin-bottom: 10px;
     padding: 4px 1px;
-    background: #d8d6d6;
     font-size: 14px;
+    padding: 4px 1px;
+    background: rgb(245, 245, 245);
+  }
+
+  /* Telefonos Utiles */
+
+  .informacion li {
+    margin-left: 5%;
+    list-style: square;
+    font-size: medium;
+    margin: 30px;
+    border: 0px;
+    text-align: left;
+  }
+
+  /* Contacto */
+
+  .imgCont {
+    width: 300px;
+    height: 200px;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 5px;
+  }
+
+  .contactoP {
+    margin-left: 75px;
+  }
+
+  .formCont {
+    margin: 50px;
   }
 }
