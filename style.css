@@ -329,6 +329,8 @@ footer {
   text-align: left;
 }
 
+
+
 /* Buscados y Encontrados */
 
 .form-login3 {
@@ -353,23 +355,43 @@ footer {
   font-size: 14px;
 }
 
-.carruselbye {
+.imagenbannerbye1 {
+  /* justify-content: space-between; */
+  /* grid-area: byeF; */
+  width: 80%;
+  margin: 5px;
+  margin-left: 30px;
+  border-radius: 5px;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
-.imagenbannerbye1 {
+.pByE {
+  /* grid-area: pByE; */
+  text-align: justify;
+  margin: 10px;
+}
+
+body .carruselbye {
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* display: grid; */
+  /* grid-template-areas: "pByE byeF"; */
   justify-content: space-between;
-  width:40%;
-  margin: 5px;
-  border-radius: 5px;
+}
+
+.h3bye {
+  text-align: justify;
 }
 
 .imagenbannerbye {
   justify-content: space-between;
-  width:45%;
+  width: 80%;
   margin: 5px;
+  margin-left: 30px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
 }
 
 /* Contacto */
@@ -575,8 +597,63 @@ footer {
   body .phone {
     display: grid;
     grid-template-areas: "parrafoContacto imagenContacto";
+    justify-content: space-around;
+  }
+
+  /* Buscados y Encontrados */
+
+  .imagenbannerbye1 {
+    /* justify-content: space-between; */
+    grid-area: byeF;
+    width: 230px;
+    height: 160px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  .pByE {
+    grid-area: pByE;
+    text-align: justify;
+    margin-left: 10px;
+  }
+
+  body .carruselbye {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-areas: "pByE byeF";
     justify-content: space-evenly;
   }
+
+  .h3bye {
+    grid-area: h3bye;
+    text-align: justify;
+    /* text-align: right; */
+    margin: 10px;
+  }
+
+  .imagenbannerbye {
+    grid-area: bye2;
+    width: 230px;
+    height: 160px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  body .carrusel2bye {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-areas: "bye2 h3bye";
+    justify-content: space-evenly;
+  }
+
+  /* .imagenbannerbye {
+    justify-content: space-between;
+    width: 45%;
+    margin: 5px;
+    border-radius: 5px;
+  } */
 }
 @media (min-width: 1000px) {
   */ a {
