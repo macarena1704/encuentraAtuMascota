@@ -313,9 +313,38 @@ footer {
 
 /* Telefonos Utiles */
 
-.imagenestelefonos {
+.telefonosutiles {
+  /* display: flex; */
   justify-content: space-between;
-  width: 45%;
+}
+
+.imagenestelefonos1 {
+
+  width: 80%;
+  margin: 5px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.h3TU {
+  text-align: justify;
+}
+
+.imagenestelefonos2 {
+
+  width: 80%;
+  margin: 5px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.imagenestelefonos3 {
+
+  width: 40%;
+  margin: 5px;
+  border-radius: 5px;
+}
+.imagenestelefonos4 {
+
+  width: 40%;
   margin: 5px;
   border-radius: 5px;
 }
@@ -563,6 +592,58 @@ body .carruselbye {
   }
 
   /* Telefonos Utiles */
+
+
+  
+  .imagenestelefonos1 {
+    grid-area: imagenestelefonos1;
+    width: 250px;
+    height: 180px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  .imagenestelefonos2 {
+    grid-area: imagenestelefonos2;
+    /* width: 200px;
+    height: 130px; */
+    width: 250px;
+    height:180px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  .h3TU{
+    grid-area: h3TU;
+  }
+
+ body .telefonosutiles {
+    display: grid;
+    grid-template-areas: "imagenestelefonos1 h3TU imagenestelefonos2";
+    justify-content: space-between;
+  }
+
+  .imagenestelefonos3 {
+    display: flex;
+    width: 140px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .imagenestelefonos4 {
+  
+    width: 140px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+
+  body .telefonesutiles2 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   .informacion li {
     margin-left: 5%;
     list-style: square;
@@ -817,6 +898,27 @@ body .carruselbye {
     text-align: left;
   }
 
+  .imagenestelefonos4 {
+    grid-area:imagenestelefono4 ;
+    width: 140px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  .imagenestelefonos3 {
+    grid-area: imagenestelefono3;
+    width: 140px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  body .telefonosutiles2 {
+    display: grid;
+    grid-template-areas: "imagenestelefono4 imagenestelefono3";
+    /* align-content: center; */
+  }
   /* Buscados y Encontrados */
   .form-login3 {
     width: 560px;
