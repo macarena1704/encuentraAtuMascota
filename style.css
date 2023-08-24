@@ -338,7 +338,7 @@ footer {
   margin-left: 20px;
   border-radius: 5px;
 }
-.imagenestelefonos3 {
+/* .imagenestelefonos3 {
 
   width: 40%;
   margin: 5px;
@@ -349,7 +349,7 @@ footer {
   width: 40%;
   margin: 5px;
   border-radius: 5px;
-}
+} */
 
 .informacion li {
   margin-left: 5%;
@@ -901,7 +901,7 @@ body .carruselbye {
     text-align: left;
   }
 
-  .imagenestelefonos4 {
+  /* .imagenestelefonos4 {
     grid-area:imagenestelefono4 ;
     width: 140px;
     height: 200px;
@@ -915,13 +915,15 @@ body .carruselbye {
     height: 200px;
     margin: 5px;
     border-radius: 5px;
-  }
+  } */
 
-  body .telefonosutiles2 {
+  /* body .telefonosutiles2 {
     display: grid;
     grid-template-areas: "imagenestelefono4 imagenestelefono3";
     /* align-content: center; */
-  }
+  /* } */ 
+
+
   /* Buscados y Encontrados */
   .form-login3 {
     width: 560px;
