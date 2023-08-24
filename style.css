@@ -13,7 +13,6 @@ a {
 
 header {
   padding: 5px;
-  /* margin: 5px; */
   background-color: azure;
   position: static;
   width: 100%;
@@ -133,7 +132,6 @@ body {
 .button {
   width: 100%;
   height: 20px;
-  /* background: rgb(36, 237, 170); */
   background: linear-gradient(to right, #3f51b5, aqua);
   border: none;
   color: white;
@@ -166,7 +164,6 @@ body div .imagenbanner {
   font-size: large;
   color: #000;
   font-family: "roboto", sans-serif;
-  /* text-decoration: underline, aqua; */
   font-weight: normal;
   text-align: center;
 }
@@ -338,18 +335,7 @@ footer {
   margin-left: 20px;
   border-radius: 5px;
 }
-/* .imagenestelefonos3 {
 
-  width: 40%;
-  margin: 5px;
-  border-radius: 5px;
-}
-.imagenestelefonos4 {
-
-  width: 40%;
-  margin: 5px;
-  border-radius: 5px;
-} */
 
 .informacion li {
   margin-left: 5%;
@@ -387,8 +373,6 @@ footer {
 }
 
 .imagenbannerbye1 {
-  /* justify-content: space-between; */
-  /* grid-area: byeF; */
   width: 80%;
   margin: 5px;
   margin-left: 30px;
@@ -398,16 +382,11 @@ footer {
 }
 
 .pByE {
-  /* grid-area: pByE; */
   text-align: justify;
   margin: 10px;
 }
 
 body .carruselbye {
-  /* display: flex;
-  flex-wrap: wrap; */
-  /* display: grid; */
-  /* grid-template-areas: "pByE byeF"; */
   justify-content: space-between;
 }
 
@@ -434,8 +413,6 @@ body .carruselbye {
 }
 
 .imgCont {
-  /* width: 230px;
-  height: 160px; */
   width: 80%;
   margin-left: 25px;
   border-radius: 5px;
@@ -608,8 +585,6 @@ body .carruselbye {
 
   .imagenestelefonos2 {
     grid-area: imagenestelefonos2;
-    /* width: 200px;
-    height: 130px; */
     width: 250px;
     height:180px;
     margin: 5px;
@@ -665,13 +640,11 @@ body .carruselbye {
     grid-area: parrafoContacto;
     margin: 10px;
     padding: 10px;
-    /* text-align: justify; */
   }
 
   .imgCont {
     grid-area: imagenContacto;
     width: 230px;
-    /* width: auto; */
     height: 160px;
     margin-top: 15px;
     margin-left: 25px;
@@ -687,7 +660,6 @@ body .carruselbye {
   /* Buscados y Encontrados */
 
   .imagenbannerbye1 {
-    /* justify-content: space-between; */
     grid-area: byeF;
     width: 230px;
     height: 160px;
@@ -702,8 +674,6 @@ body .carruselbye {
   }
 
   body .carruselbye {
-    /* display: flex;
-    flex-wrap: wrap; */
     display: grid;
     grid-template-areas: "pByE byeF";
     justify-content: space-evenly;
@@ -712,7 +682,6 @@ body .carruselbye {
   .h3bye {
     grid-area: h3bye;
     text-align: justify;
-    /* text-align: right; */
     margin: 10px;
   }
 
@@ -725,19 +694,11 @@ body .carruselbye {
   }
 
   body .carrusel2bye {
-    /* display: flex;
-    flex-wrap: wrap; */
     display: grid;
     grid-template-areas: "bye2 h3bye";
     justify-content: space-evenly;
   }
 
-  /* .imagenbannerbye {
-    justify-content: space-between;
-    width: 45%;
-    margin: 5px;
-    border-radius: 5px;
-  } */
 }
 @media (min-width: 1000px) {
   */ a {
@@ -900,28 +861,6 @@ body .carruselbye {
     border: 0px;
     text-align: left;
   }
-
-  /* .imagenestelefonos4 {
-    grid-area:imagenestelefono4 ;
-    width: 140px;
-    height: 200px;
-    margin: 5px;
-    border-radius: 5px;
-  }
-
-  .imagenestelefonos3 {
-    grid-area: imagenestelefono3;
-    width: 140px;
-    height: 200px;
-    margin: 5px;
-    border-radius: 5px;
-  } */
-
-  /* body .telefonosutiles2 {
-    display: grid;
-    grid-template-areas: "imagenestelefono4 imagenestelefono3";
-    /* align-content: center; */
-  /* } */ 
 
 
   /* Buscados y Encontrados */
