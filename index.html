@@ -33,6 +33,7 @@ H2 -->
     <!-- A continuación creamos una seccion padre llamada Inicio que contiene una imagen y un formulario, a fin de acomodarlas mediante
     grillas en el CSS -->
     <main>
+      <center>
       <section class="inicio">
         <!-- Esto quedaria mejor en css pero no sabemos bien como hacerlo. Por ahora lo dejamos en el HTML comentado. 
           Es para poner el texto sobre la imagen. -->
@@ -70,96 +71,101 @@ H2 -->
           <p><a href="#"> ¿Olvidaste tu contraseña?</a></p>
         </section>
       </section>
-
+      </center>
       <u><h2 class="titulos">SOBRE NOSOTROS</h2></u>
       <!-- A fin de no repetir en cada párrafo que pertenecen a la clase párrafos, se crea una  -->
       <!-- seccion que los contiene. De esta manera evitamos que al utilizar grillas y pretender identificar los 3 párrafos se sobreescriban. -->
-      <section class="sobrenosotros">
-        <section class="parrafos">
-          <p>
-            Encuentra a tu mascota nace en la ciudad de La Plata como una
-            solución amigable para aquellos corazones preocupados de los dueños
-            que han perdido a sus mascotas y de las mascotas que buscan a sus
-            dueños. El principal objetivo es brindar herramientas que permitan
-            un rápido reencuentro. A través de la misma, quienes hayan perdido o
-            encontrado una mascota pueden publicar su foto, agregando
-            descripciones y características.
-          </p>
+      
+      <center>
+        <section class="sobrenosotros">
+          <section class="parrafos">
+            <p>
+              Encuentra a tu mascota nace en la ciudad de La Plata como una
+              solución amigable para aquellos corazones preocupados de los dueños
+              que han perdido a sus mascotas y de las mascotas que buscan a sus
+              dueños. El principal objetivo es brindar herramientas que permitan
+              un rápido reencuentro. A través de la misma, quienes hayan perdido o
+              encontrado una mascota pueden publicar su foto, agregando
+              descripciones y características.
+            </p>
 
-          <p>
-            Asimismo, contamos con la sección Adopciones y Tránsito, destinada a
-            quienes están dispuestos a dar hogar permanente o transitorio a
-            nujestros pequeños amigos. Remarcamos lo importante que es
-            concientizar en este tema y la responsabilidad que ser un hogar
-            implica. Es por ello que quienes decidan formar parte de dicho grupo
-            deberán cumplir una serie de requisitos mínimos.
-          </p>
+            <p>
+              Asimismo, contamos con la sección Adopciones y Tránsito, destinada a
+              quienes están dispuestos a dar hogar permanente o transitorio a
+              nujestros pequeños amigos. Remarcamos lo importante que es
+              concientizar en este tema y la responsabilidad que ser un hogar
+              implica. Es por ello que quienes decidan formar parte de dicho grupo
+              deberán cumplir una serie de requisitos mínimos.
+            </p>
 
-          <p>
-            Por último podran encontrar en la sección "Teléfonos Utiles" datos
-            de contacto importantes a la hora de cuidar a los animales.
-          </p>
+            <p>
+              Por último podran encontrar en la sección "Teléfonos Utiles" datos
+              de contacto importantes a la hora de cuidar a los animales.
+            </p>
+          </section>
+
+          <!-- Con esta configuracion el video se reproduce en silencio y de manera continua. -->
+          <video
+            class="videoinicio"
+            src="Index/Videos/video perro inicio.mp4"
+            width="275px"
+            height="150px"
+            autoplay="true"
+            muted="true"
+            loop="true"
+          ></video>
         </section>
-
-        <!-- Con esta configuracion el video se reproduce en silencio y de manera continua. -->
-        <video
-          class="videoinicio"
-          src="Index/Videos/video perro inicio.mp4"
-          width="275px"
-          height="150px"
-          autoplay="true"
-          muted="true"
-          loop="true"
-        ></video>
-      </section>
+      </center>
       <u><h2 class="titulos">LA ALEGRIA DE LOS REENCUENTROS</h2></u>
       <!-- acá va un carrusel de imágenes con descripciones de cada reencuentro logrado a través de la página. 
         A modo de ejemplo incorporamos imágenes hasta tener el conocimiento de como hacer el carrusel -->
 
-      <section class="carrusel">
-        <img
-          class="imagenesinicio"
-          src="Index/ImagenesInicio/alegriareencuentros.jpg"
-          alt="Mujer abrazada a dos perros salchicas"
-        />
-
-        <img
-          class="imagenesinicio"
-          src="Index/ImagenesInicio/ETM2.jpg"
-          alt="Niña jugando con su perrito"
-        />
-
-        <img
-          class="imagenesinicio"
-          src="Index/ImagenesInicio/ETM3.jpg"
-          alt="Labrador adulto sonriendo"
-        />
-      </section>
-
-      <section class="form-login2">
-        <h5>Suscríbete para recibir novedades</h5>
-
-        <form>
-          <input
-            class="controls2"
-            type="Text"
-            name="Nombre"
-            value=""
-            placeholder="Nombre"
+      <center>
+          <section class="carrusel">
+          <img
+            class="imagenesinicio"
+            src="Index/ImagenesInicio/alegriareencuentros.jpg"
+            alt="Mujer abrazada a dos perros salchicas"
           />
 
-          <input
-            class="controls2"
-            type="email"
-            name="Email"
-            value=""
-            placeholder="Email"
+          <img
+            class="imagenesinicio"
+            src="Index/ImagenesInicio/ETM2.jpg"
+            alt="Niña jugando con su perrito"
           />
 
-          <input class="button" type="submit" value="Enviar" />
-          <input class="button" type="reset" value="Borrar" />
-        </form>
-      </section>
+          <img
+            class="imagenesinicio"
+            src="Index/ImagenesInicio/ETM3.jpg"
+            alt="Labrador adulto sonriendo"
+          />
+        </section>
+
+        <section class="form-login2">
+          <h5>Suscríbete para recibir novedades</h5>
+
+          <form>
+            <input
+              class="controls2"
+              type="Text"
+              name="Nombre"
+              value=""
+              placeholder="Nombre"
+            />
+
+            <input
+              class="controls2"
+              type="email"
+              name="Email"
+              value=""
+              placeholder="Email"
+            />
+
+            <input class="button" type="submit" value="Enviar" />
+            <input class="button" type="reset" value="Borrar" />
+          </form>
+        </section>
+      </center>
     </main>
 
     <footer>

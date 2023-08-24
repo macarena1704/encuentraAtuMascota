@@ -86,6 +86,8 @@ body {
 .carrusel {
   display: flex;
   flex-wrap: wrap;
+  /* agregado */
+  justify-content: center;
 }
 
 .form-login {
