@@ -44,38 +44,25 @@ H2 -->
             alt="Perrito que saluda con la mirada"
           />
         </div>
-        <!-- EL TEXTO ESTA COMENTADO HASTA SABER COMO ALINEAR EL TEXTO EN EL MEDIO DE LA IMAGEN -->
 
-        <!-- <div style="position: absolute; top: 45%; left: 35%"> -->
 
-        <!-- <p class="bienvenidos">BIENVENIDOS!</p> -->
-        <!-- </div> -->
-
-        <section class="form-login">
+        <form class="form-login">
           <h5>Formulario Login</h5>
-          <input
-            class="controls"
-            type="text"
-            name="usuario"
-            value=""
-            placeholder="Usuario"
-          />
-          <input
-            class="controls"
-            type="password"
-            name="contraseña"
-            value=""
-            placeholder="Contraseña"
-          />
-          <input class="button" type="submit" name="" value="Ingresar" />
-          <p><a href="#"> ¿Olvidaste tu contraseña?</a></p>
-        </section>
+          <input id="username" class="controls" type="text" required placeholder="Usuario">
+          <input id="pass" class="controls" type="password" required name="contrasenia" value="" placeholder="Contraseña">
+           <p id="mensajePass"></p>
+          <button class="button">Ingresar</button>
+          <p id="mensajeIngreso"></p>
+
+          <!-- <a href="#">Olvidé mi contraseña</a> -->
+      </form>
       </section>
+     </section>
+
       </center>
       <u><h2 class="titulos">SOBRE NOSOTROS</h2></u>
       <!-- A fin de no repetir en cada párrafo que pertenecen a la clase párrafos, se crea una  -->
       <!-- seccion que los contiene. De esta manera evitamos que al utilizar grillas y pretender identificar los 3 párrafos se sobreescriban. -->
-      
       <center>
         <section class="sobrenosotros">
           <section class="parrafos">
