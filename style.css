@@ -85,12 +85,60 @@ body {
   border-radius: 5px;
 }
 
-.carrusel {
+/* .carrusel {
   display: flex;
   flex-wrap: wrap;
   /* agregado */
-  justify-content: center;
+  /* justify-content: center; */
+/* } */ */
+
+/* CARRUSEL */
+
+/* TAMAÑO DE IMAGENES DEL CARRUSEL */
+.imgCarruselPpal{
+  width: 100%;
 }
+
+/* tamaño de la mujer y perros salchichas */
+.imgCarruselPpal1{
+  width: 90%;
+}
+
+.carousel-caption {
+  top: 85px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+}
+/* INDICADORES LINEAS _ _ _ DEL CARRUSEL */
+.carousel-indicators{
+  top: 200px;
+}
+
+/* PADDING EN RELACION DISTANCIA CON LAS LINEAS PARA PASAR DE FOTO y el titulo */
+
+.tituloCarrusel{
+  margin-top: 60px;
+  line-height: 25px;
+  margin-right: auto ;
+  margin-left: auto;
+  width: 60%;
+  opacity: 0.7;
+  background: linear-gradient(to right, #3f51b5, aqua);
+  font-size: large
+}
+
+.tituloCarrusel1{
+  margin-top: 60px;
+  line-height: 25px;
+  margin-right: auto ;
+  margin-left: auto;
+  width: 60%;
+  opacity: 0.7;
+  background: linear-gradient(to right, #3f51b5, aqua);
+  font-size: large}
+
 
 .form-login {
   width: 250px;
@@ -352,6 +400,13 @@ footer {
 
 
 /* Buscados y Encontrados */
+
+.videoAdopcion{
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 
 .article {
   display: flex;
@@ -671,6 +726,13 @@ body .carruselbye {
 
   /* Buscados y Encontrados */
 
+  .videoAdopcion{
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+
   .imagenbannerbye1 {
     grid-area: byeF;
     width: 230px;
@@ -876,6 +938,14 @@ body .carruselbye {
 
 
   /* Buscados y Encontrados */
+
+  .videoAdopcion{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 560px;
+    height: 315px;
+  }
+
   .form-login3 {
     width: 560px;
     height: 1000px;

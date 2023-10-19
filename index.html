@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encuentra a tu mascota</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <!-- Nuevo Header. Eliminamos la imagen que contenia logo y texto y dejamos solamente la lupa como logo, indicando el nombre de la empresa como un 
 H2 -->
     <header>
       <nav>
-        <a href="index.html" class="logo">
+        <a href="/index.html" class="logo">
           <img
             id="imglogo"
-            src="Index/ImagenesInicio/LUPA_Mesa de trabajo 1.png"
+            src="/imagenes/LUPA_Mesa de trabajo 1.png"
             alt="logo de lupa con huellita dentro"
           />
           <h2 class="nombre-empresa">Encuentra a Tu Mascota</h2>
@@ -23,10 +23,10 @@ H2 -->
 
       <!-- La clase "container" incluye los links de las restantes páginas -->
       <nav class="container">
-        <a href="buscadosyencontrados.html"> Buscados y encontrados</a>
-        <a href="telefonosUtiles.html"> Telefonos Utiles</a>
-        <a href="AdopcionesYtransito2.html"> Adopciones y Tránsito</a>
-        <a href="contacto.html"> Contacto </a>
+        <a href="html/buscadosyencontrados.html"> Buscados y encontrados</a>
+        <a href="html/telefonosUtiles.html"> Telefonos Utiles</a>
+        <a href="html/AdopcionesYtransito2.html"> Adopciones y Tránsito</a>
+        <a href="html/contacto.html"> Contacto </a>
       </nav>
     </header>
 
@@ -34,31 +34,43 @@ H2 -->
     grillas en el CSS -->
     <main>
       <center>
-      <section class="inicio">
-        <!-- Esto quedaria mejor en css pero no sabemos bien como hacerlo. Por ahora lo dejamos en el HTML comentado. 
+        <section class="inicio">
+          <!-- Esto quedaria mejor en css pero no sabemos bien como hacerlo. Por ahora lo dejamos en el HTML comentado. 
           Es para poner el texto sobre la imagen. -->
-        <div style="position: relative">
-          <img
-            class="imagenesinicioA"
-            src="Index/ImagenesInicio/PORTADA3.jpg"
-            alt="Perrito que saluda con la mirada"
-          />
-        </div>
+          <div style="position: relative">
+            <img
+              class="imagenesinicioA"
+              src="/imagenes/PORTADA3.jpg"
+              alt="Perrito que saluda con la mirada"
+            />
+          </div>
 
+          <form class="form-login">
+            <!-- El formulario tiene el usuario hardcodeado. Es "Macarena" -->
+            <h5>Formulario Login</h5>
+            <input
+              id="username"
+              class="controls"
+              type="text"
+              required
+              placeholder="Usuario"
+            />
+            <input
+              id="pass"
+              class="controls"
+              type="password"
+              required
+              name="contrasenia"
+              value=""
+              placeholder="Contraseña"
+            />
+            <p id="mensajePass"></p>
+            <button class="button">Ingresar</button>
+            <p id="mensajeIngreso"></p>
 
-        <form class="form-login">
-          <h5>Formulario Login</h5>
-          <input id="username" class="controls" type="text" required placeholder="Usuario">
-          <input id="pass" class="controls" type="password" required name="contrasenia" value="" placeholder="Contraseña">
-           <p id="mensajePass"></p>
-          <button class="button">Ingresar</button>
-          <p id="mensajeIngreso"></p>
-
-          <!-- <a href="#">Olvidé mi contraseña</a> -->
-      </form>
-      </section>
-     </section>
-
+            <!-- <a href="#">Olvidé mi contraseña</a> -->
+          </form>
+        </section>
       </center>
       <u><h2 class="titulos">SOBRE NOSOTROS</h2></u>
       <!-- A fin de no repetir en cada párrafo que pertenecen a la clase párrafos, se crea una  -->
@@ -68,21 +80,21 @@ H2 -->
           <section class="parrafos">
             <p>
               Encuentra a tu mascota nace en la ciudad de La Plata como una
-              solución amigable para aquellos corazones preocupados de los dueños
-              que han perdido a sus mascotas y de las mascotas que buscan a sus
-              dueños. El principal objetivo es brindar herramientas que permitan
-              un rápido reencuentro. A través de la misma, quienes hayan perdido o
-              encontrado una mascota pueden publicar su foto, agregando
-              descripciones y características.
+              solución amigable para aquellos corazones preocupados de los
+              dueños que han perdido a sus mascotas y de las mascotas que buscan
+              a sus dueños. El principal objetivo es brindar herramientas que
+              permitan un rápido reencuentro. A través de la misma, quienes
+              hayan perdido o encontrado una mascota pueden publicar su foto,
+              agregando descripciones y características.
             </p>
 
             <p>
-              Asimismo, contamos con la sección Adopciones y Tránsito, destinada a
-              quienes están dispuestos a dar hogar permanente o transitorio a
+              Asimismo, contamos con la sección Adopciones y Tránsito, destinada
+              a quienes están dispuestos a dar hogar permanente o transitorio a
               nujestros pequeños amigos. Remarcamos lo importante que es
               concientizar en este tema y la responsabilidad que ser un hogar
-              implica. Es por ello que quienes decidan formar parte de dicho grupo
-              deberán cumplir una serie de requisitos mínimos.
+              implica. Es por ello que quienes decidan formar parte de dicho
+              grupo deberán cumplir una serie de requisitos mínimos.
             </p>
 
             <p>
@@ -94,7 +106,7 @@ H2 -->
           <!-- Con esta configuracion el video se reproduce en silencio y de manera continua. -->
           <video
             class="videoinicio"
-            src="Index/Videos/video perro inicio.mp4"
+            src="/imagenes/video perro inicio.mp4"
             width="275px"
             height="150px"
             autoplay="true"
@@ -105,28 +117,70 @@ H2 -->
       </center>
       <u><h2 class="titulos">LA ALEGRIA DE LOS REENCUENTROS</h2></u>
       <!-- acá va un carrusel de imágenes con descripciones de cada reencuentro logrado a través de la página. 
-        A modo de ejemplo incorporamos imágenes hasta tener el conocimiento de como hacer el carrusel -->
+      El que está comentado es la version original con imágenes estáticas. Abajo se encuentra el nuevo carrusel creado a través de bootstrap.  -->
 
       <center>
-          <section class="carrusel">
+        <section class="carrusel">
           <img
             class="imagenesinicio"
-            src="Index/ImagenesInicio/alegriareencuentros.jpg"
+            src="/imagenes/alegriareencuentros.jpg"
             alt="Mujer abrazada a dos perros salchicas"
           />
 
           <img
             class="imagenesinicio"
-            src="Index/ImagenesInicio/ETM2.jpg"
+            src="/imagenes/ETM2.jpg"
             alt="Niña jugando con su perrito"
           />
 
           <img
             class="imagenesinicio"
-            src="Index/ImagenesInicio/ETM3.jpg"
+            src="/imagenes/ETM3.jpg"
             alt="Labrador adulto sonriendo"
           />
         </section>
+        <!-- 
+        <div id="carruselPrincipal" class="carousel slide" data-ride="carousel"> 
+  
+          <ol class="carousel-indicators">
+            <li data-target="#carruselPrincipal" data-slide-to="0" class="active"></li>
+            <li data-target="#carruselPrincipal" data-slide-to="1"></li>
+            <li data-target="#carruselPrincipal" data-slide-to="2"></li>
+          </ol>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <img src="/imagenes/alegriareencuentros.jpg" alt="Mujer                   perro salchichas" class="imgCarruselPpal1">
+                       <div class="carousel-caption">
+                       <h3 class="tituloCarrusel1">ALEGRIA</h3> 
+                  </div>   
+                    <p class="carruselPfo">Un sentimiento único entre una mascota y su dueño</p>                           
+                 </div> 
+                 
+           
+                  <div class="carousel-item">
+                     <img src="/imagenes/ETM2.jpg" alt="Niña y cocker" class="imgCarruselPpal">
+                       <div class="carousel-caption">
+                       <h3 class="tituloCarrusel">FELICIDAD</h3>
+                  </div> 
+                    <p class="carruselPfo">La mejor compañía para la infancia</p> 
+                 </div> 
+            
+                  <div class="carousel-item">
+                     <img src="/imagenes/ETM3.jpg" alt="Labrador" class="imgCarruselPpal">
+                       <div class="carousel-caption">        
+                       <h3 class="tituloCarrusel">ENCUENTRO</h3>
+                 </div>     
+                   <p class="carruselPfo">Volver a encontrarse con su fiel amigo, y recibir un afecto tan puro</p>
+                 </div>
+        
+          CONTROLES -->
+        <!-- <a class="carousel-control-prev" href="#carruselPrincipal" data-slide="prev">
+                 <span class="carousel-control-prev-icon"></span>
+           </a>
+           <a class="carousel-control-next" href="#carruselPrincipal" data-slide="next">
+                 <span class="carousel-control-next-icon"></span>
+           </a>
+        </div> -->
 
         <section class="form-login2">
           <h5>Suscríbete para recibir novedades</h5>
@@ -162,17 +216,13 @@ H2 -->
           <a href="https://mail.google.com/">
             <img
               class="iconos"
-              src="Index/ImagenesInicio/logo email.png"
+              src="/imagenes/logo email.png"
               alt="Logo de email"
             />
             etm@gmail.com</a
           >
           <p class="texto">
-            <img
-              class="iconos"
-              src="Index/ImagenesInicio/logo tel.png"
-              alt="Teléfono"
-            />
+            <img class="iconos" src="/imagenes/logo tel.png" alt="Teléfono" />
             2216547892
           </p>
         </div>
@@ -182,24 +232,25 @@ H2 -->
           <a href="https://www.instagram.com">
             <img
               class="red-social"
-              src="Index/ImagenesInicio/instagram.png"
+              src="/imagenes/instagram.png"
               alt="Logo de Instagram"
           /></a>
           <a href="https://www.twitter.com/home">
             <img
               class="red-social"
-              src="Index/ImagenesInicio/twitter.png"
+              src="/imagenes/twitter.png"
               alt="Logo de Twitter"
           /></a>
           <a href="https://www.facebook.com">
             <img
               class="red-social"
-              src="Index/ImagenesInicio/facebook.png"
+              src="/imagenes/facebook.png"
               alt="Logo de Facebook"
           /></a>
         </div>
       </section>
     </footer>
-    <script src="script.js"> </script>
+    <script src="/js/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
   </body>
 </html>
