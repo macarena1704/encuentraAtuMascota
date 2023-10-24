@@ -62,6 +62,8 @@ body {
   font-size: small;
   font-family: "roboto", sans-serif;
   line-height: 20px;
+  background-color: linear-gradient(rgb(63, 93, 237), rgb(139, 245, 233),rgb(63, 93, 242)) ;
+  background-repeat: no-repeat; 
 }
 
 .imagenesinicioA {
