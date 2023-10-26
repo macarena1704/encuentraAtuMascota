@@ -45,9 +45,12 @@ header nav {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  height: 70px;
-  width: 90px;
+  height: 100px;
+  width: 200px;
 }
+
+
+
 
 nav a {
   font-weight: 500;
@@ -59,12 +62,17 @@ a:active {
   font-weight: bold;
 }
 
+
 body {
   margin: 20px;
   font-size: small;
   font-family: "roboto", sans-serif;
   line-height: 20px;
+  /* Agregamos fondo */
+  background-image: linear-gradient(rgba(99, 248, 230, 0.697), rgba(63, 92, 237, 0.741)) ;
+  background-repeat: no-repeat;
 }
+
 
 .imagenesinicioA {
   width: 275px;
@@ -85,70 +93,23 @@ body {
   border-radius: 5px;
 }
 
-/* .carrusel {
-  display: flex;
-  flex-wrap: wrap;
-  /* agregado */
-  /* justify-content: center; */
-/* } */ */
-
-/* CARRUSEL */
-
-/* TAMAÑO DE IMAGENES DEL CARRUSEL */
-.imgCarruselPpal{
-  width: 100%;
-}
-
-/* tamaño de la mujer y perros salchichas */
-.imgCarruselPpal1{
-  width: 90%;
-}
-
-.carousel-caption {
-  top: 85px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-
-}
-/* INDICADORES LINEAS _ _ _ DEL CARRUSEL */
 .carousel-indicators{
-  top: 200px;
+  top: 170px;
 }
 
-/* PADDING EN RELACION DISTANCIA CON LAS LINEAS PARA PASAR DE FOTO y el titulo */
 
-.tituloCarrusel{
-  margin-top: 60px;
-  line-height: 25px;
-  margin-right: auto ;
-  margin-left: auto;
-  width: 60%;
-  opacity: 0.7;
-  background: linear-gradient(to right, #3f51b5, aqua);
-  font-size: large
-}
-
-.tituloCarrusel1{
-  margin-top: 60px;
-  line-height: 25px;
-  margin-right: auto ;
-  margin-left: auto;
-  width: 60%;
-  opacity: 0.7;
-  background: linear-gradient(to right, #3f51b5, aqua);
-  font-size: large}
 
 
 .form-login {
   width: 250px;
-  height: 150px;
+  height: 280px;
   background-color: aquamarine;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 20px;
   box-shadow: 2px 3px 5px #000;
-  padding: 11px;
-  border-top: 4px solid rgb(36, 237, 170);
+  padding: 10px;
+  padding-bottom: 20px; 
+  border-top: 5px solid rgb(36, 237, 170);
   color: white;
 }
 
@@ -227,17 +188,20 @@ body div .imagenbanner {
   font-weight: normal;
   text-align: left;
 }
+
+
 .form-login2 {
   width: 250px;
-  height: 150px;
+  height: 180px;
   background-color: aquamarine;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 20px;
   box-shadow: 2px 3px 5px #000;
   padding: 11px;
   border-top: 4px solid rgb(36, 237, 170);
   color: white;
 }
+
 
 .form-login2 h5 {
   margin: 0;
@@ -254,7 +218,8 @@ footer {
   background-color: #bae8ec8c;
   text-align: center;
 }
-*/ .footer {
+ 
+.footer {
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -412,8 +377,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* border: #000 1px;
-  border-radius: 30%; */
+
   }
   
 
@@ -500,6 +464,9 @@ body .carruselbye {
   font-weight: 100;
 }
 @media (min-width: 768px) {
+
+
+
   header .container {
     flex-direction: row;
     justify-content: space-evenly;
@@ -507,10 +474,14 @@ body .carruselbye {
     font-size: medium;
   }
 
+ 
+
   .logo img {
-    height: 90px;
-    width: 110px;
+    height: 150px;
+    width: 250px;
+
   }
+
 
   .logo {
     display: flex;
@@ -535,6 +506,20 @@ body .carruselbye {
     height: 75%;
     width: 250px;
   }
+
+  .form-login {
+    width: 270px;
+    height: 290px;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 5px;
+    box-shadow: 2px 3px 5px #000;
+    padding: 10px;
+    padding-bottom: 20px; 
+    border-top: 5px solid rgb(36, 237, 170);
+    color: white;
+  }
+
 
   .controls {
     width: 100%;
@@ -575,6 +560,14 @@ body .carruselbye {
     font-size: 13px;
   }
 
+    /* Agrego comando carrusel */
+
+  .carousel-indicators{
+    top: 4220px;
+  }
+    
+    
+
   body .inicio {
     display: grid;
     grid-template-areas: "imagenInicio imagenInicio formularioInicio";
@@ -601,15 +594,20 @@ body .carruselbye {
     text-align: center;
   }
 
+
+
   .form-login2 {
-    width: auto;
-    height: auto;
+    width: 500px;
+    height: 170px;
     background-color: aquamarine;
-    margin-top: 10px;
+    margin : auto;
+    margin-top: 20px;
+    padding: 10px;
     box-shadow: 2px 3px 5px #000;
     border-top: 4px solid rgb(36, 237, 170);
     color: white;
   }
+
 
   .form-login2 h5 {
     margin: 0;
@@ -775,7 +773,7 @@ body .carruselbye {
 
 }
 @media (min-width: 1000px) {
-  */ a {
+  a {
     text-decoration: none;
     color: #000;
   }
@@ -785,10 +783,15 @@ body .carruselbye {
     align-items: center;
   }
 
+
   .logo img {
-    height: 120px;
-    width: 150px;
+    height: 230px;
+    width: 350px;
   }
+ 
+  /* .nombre-empresa{
+    font-size;
+  } */
 
   nav a {
     font-weight: 600;
@@ -828,6 +831,11 @@ body .carruselbye {
     height: auto;
     justify-content: space-evenly;
   }
+
+  .carousel-indicators{
+    top: 580px;
+  }
+
 
   body .sobrenosotros {
     display: grid;
@@ -869,18 +877,21 @@ body .carruselbye {
     text-align: center;
   }
 
+
+
   .form-login {
-    width: 100%;
-    height: 85%;
+    width: 350px;
+    height: 347px;
     background-color: aquamarine;
     margin: auto;
     justify-content: left;
-    margin-top: 10px;
+    margin-top: 11px;
     box-shadow: 2px 3px 5px #000;
     padding: 11px;
     border-top: 4px solid rgb(36, 237, 170);
     color: white;
   }
+
 
   .form-login2 {
     width: 50%;
@@ -893,6 +904,10 @@ body .carruselbye {
     padding: 11px;
     border-top: 4px solid rgb(36, 237, 170);
     color: white;
+  }
+
+  .carruselPfo{
+    font-size: large;
   }
 
   .controls {

@@ -75,3 +75,4 @@ for (let i = 0; i < jsonConvertido.length; i++){
     document.getElementById("articleByE").appendChild(article)
 };
 
+
